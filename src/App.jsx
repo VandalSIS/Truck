@@ -1,33 +1,32 @@
-import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { AboutUs } from "./screens/AboutUs";
-import { ContactUs } from "./screens/ContactUs";
-import { Home } from "./screens/Home";
-import { Services } from "./screens/Services";
+import React from 'react'
+import './App.css'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import Stats from './components/Stats'
+import Benefits from './components/Benefits'
+import About from './components/About'
+import Services from './components/Services'
+import Gallery from './components/Gallery'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
-const router = createBrowserRouter([
-  {
-    path: "/*",
-    element: <Home />,
-  },
-  {
-    path: "/home-3",
-    element: <Home />,
-  },
-  {
-    path: "/contact-us",
-    element: <ContactUs />,
-  },
-  {
-    path: "/about-us",
-    element: <AboutUs />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-]);
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <Features />
+      <Stats />
+      <Benefits />
+      <Services />
+      <About />
+      <Gallery />
+      <Contact />
+      <Footer />
+    </div>
+  )
+}
 
-export const App = () => {
-  return <RouterProvider router={router} />;
-};
+export default App
+
