@@ -1,26 +1,32 @@
 .contact-us {
   background-color: #ffffff;
   min-height: 2131px;
-  min-width: 1440px;
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .contact-us .screenshot-capture {
   aspect-ratio: 3.63;
   height: 565px;
   left: 0;
+  right: 0;
   position: absolute;
   top: 80px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact-us .rectangle {
   height: 379px;
   left: 0;
+  right: 0;
   position: absolute;
   top: 1384px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact-us .vector {
@@ -56,9 +62,12 @@
   background-color: #179fd9;
   height: 368px;
   left: 0;
+  right: 0;
   position: absolute;
   top: 1763px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact-us .div {
@@ -302,9 +311,12 @@
   background-color: #1f1f1f;
   height: 80px;
   left: 0;
+  right: 0;
   position: absolute;
   top: 0;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact-us .div-wrapper {
@@ -381,13 +393,35 @@
   top: 40px;
 }
 
+/* Navigation Links */
+.contact-us .navbar a {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-us .navbar a:hover {
+  opacity: 0.8;
+}
+
+.contact-us .image-removebg {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.contact-us .image-removebg:hover {
+  opacity: 0.9;
+}
+
 .contact-us .rectangle-2 {
   background-color: #1f1f1f;
   height: 739px;
   left: 0;
+  right: 0;
   position: absolute;
   top: 645px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contact-us .text-wrapper-17 {
@@ -596,4 +630,250 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1440px) {
+  .contact-us .screenshot-capture,
+  .contact-us .rectangle,
+  .contact-us .frame,
+  .contact-us .frame-2,
+  .contact-us .rectangle-2 {
+    width: 100%;
+  }
+
+  .contact-us .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-us .navbar {
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .contact-us .text-wrapper-16 {
+    font-size: 12px;
+  }
+
+  .contact-us .text-wrapper-17 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-us .text-wrapper-18 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  .contact-us .frame-2 {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .contact-us .image-removebg {
+    height: 40px;
+    width: auto;
+    left: 20px;
+  }
+
+  .contact-us .MC-DOT {
+    left: 120px;
+    font-size: 8px;
+  }
+
+  .contact-us .navbar {
+    display: none;
+  }
+
+  .contact-us .div-wrapper {
+    right: 10px;
+    left: auto;
+    top: 15px;
+    padding: 8px 15px;
+  }
+
+  .contact-us .search {
+    display: none;
+  }
+
+  /* Hero image */
+  .contact-us .screenshot-capture {
+    height: auto;
+    width: 100%;
+  }
+
+  /* Contact section */
+  .contact-us .rectangle-2 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contact-us .text-wrapper-17 {
+    width: 90%;
+    left: 5%;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .contact-us .text-wrapper-18 {
+    width: 90%;
+    left: 5%;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .contact-us .p {
+    width: 90%;
+    left: 5%;
+  }
+
+  .contact-us .frame-3 {
+    width: calc(100% - 40px);
+    left: 20px;
+    height: auto;
+    min-height: 150px;
+  }
+
+  .contact-us .frame-4,
+  .contact-us .frame-5 {
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+
+  .contact-us .frame-6 {
+    left: 20px;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .contact-us .text-wrapper-20 {
+    left: 20px;
+  }
+
+  .contact-us .text-wrapper-21,
+  .contact-us .text-wrapper-22,
+  .contact-us .text-wrapper-23,
+  .contact-us .text-wrapper-24 {
+    position: static;
+    display: block;
+    margin: 10px 20px;
+  }
+
+  .contact-us .text-wrapper-25,
+  .contact-us .text-wrapper-26 {
+    position: static;
+    display: block;
+    margin: 15px 20px 5px;
+  }
+
+  /* World section */
+  .contact-us .text-wrapper {
+    font-size: 28px;
+    line-height: 36px;
+    white-space: normal;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contact-us .vector,
+  .contact-us .img {
+    position: static;
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Footer */
+  .contact-us .frame {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contact-us .div {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .contact-us .text-wrapper-2,
+  .contact-us .text-wrapper-3,
+  .contact-us .text-wrapper-4,
+  .contact-us .text-wrapper-5,
+  .contact-us .text-wrapper-6,
+  .contact-us .text-wrapper-7,
+  .contact-us .text-wrapper-8,
+  .contact-us .text-wrapper-9,
+  .contact-us .text-wrapper-10,
+  .contact-us .text-wrapper-11 {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .contact-us .line,
+  .contact-us .line-2 {
+    display: none;
+  }
+
+  .contact-us .vector-2,
+  .contact-us .vector-3 {
+    display: none;
+  }
+
+  .contact-us .text-wrapper-12,
+  .contact-us .text-wrapper-13 {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 20px auto 10px;
+  }
+
+  .contact-us .text-wrapper-14,
+  .contact-us .text-wrapper-15 {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .contact-us .mask-group {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us .text-wrapper-17 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .contact-us .text-wrapper-18 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contact-us .text-wrapper {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .contact-us .text-wrapper-25,
+  .contact-us .text-wrapper-26 {
+    font-size: 18px;
+  }
 }

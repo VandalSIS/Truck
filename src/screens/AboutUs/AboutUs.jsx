@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const AboutUs = () => {
@@ -338,20 +339,30 @@ export const AboutUs = () => {
           />
         </div>
 
-        <img
-          className="image-removebg-3"
-          alt="Image removebg"
-          src="https://cdn.animaapp.com/projects/68c367638464b4d7f868904d/releases/68f13c8c7a40b4019cb45c3a/img/image-removebg-preview--2--1@2x.png"
-        />
+        <Link to="/home-3">
+          <img
+            className="image-removebg-3"
+            alt="Image removebg"
+            src="https://cdn.animaapp.com/projects/68c367638464b4d7f868904d/releases/68f13c8c7a40b4019cb45c3a/img/image-removebg-preview--2--1@2x.png"
+          />
+        </Link>
 
         <div className="navbar-3">
-          <div className="text-wrapper-144">Home</div>
+          <Link to="/home-3" style={{ textDecoration: 'none' }}>
+            <div className="text-wrapper-144">Home</div>
+          </Link>
 
-          <div className="text-wrapper-144">About us</div>
+          <Link to="/about-us" style={{ textDecoration: 'none' }}>
+            <div className="text-wrapper-144">About us</div>
+          </Link>
 
-          <div className="text-wrapper-144">Services</div>
+          <Link to="/services" style={{ textDecoration: 'none' }}>
+            <div className="text-wrapper-144">Services</div>
+          </Link>
 
-          <div className="text-wrapper-144">Contacts</div>
+          <Link to="/contact-us" style={{ textDecoration: 'none' }}>
+            <div className="text-wrapper-144">Contacts</div>
+          </Link>
         </div>
 
         <div className="MC-DOT-3">
