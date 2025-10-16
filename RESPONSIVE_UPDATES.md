@@ -3,6 +3,8 @@
 ## Overview
 The website has been made fully responsive across all pages to provide an optimal viewing experience on devices of all sizes - from mobile phones to desktop monitors.
 
+**Inspired by:** [ViviaVerde Moldova](https://vivaverde-moldova-bloom.vercel.app/) - implemented smooth transitions, fluid layouts, and modern responsive design patterns.
+
 ## Critical Fix: Width Management
 All fixed `width: 1440px` declarations have been replaced with flexible widths:
 - Changed to `width: 100%; max-width: 1600px;`
@@ -12,13 +14,15 @@ All fixed `width: 1440px` declarations have been replaced with flexible widths:
 
 ## Breakpoints
 
-The following breakpoints have been implemented:
+The following breakpoints have been implemented with smooth transitions:
 
-- **Desktop Large**: > 1600px (max-width container)
-- **Desktop**: 1440px and below
-- **Tablet**: 992px and below
-- **Mobile**: 768px and below
-- **Mobile Small**: 480px and below
+- **Desktop Large**: > 1600px (max-width container, fluid layout)
+- **Desktop**: ≤ 1600px (fully responsive containers)
+- **Desktop Medium**: ≤ 1440px (adjusted typography, smooth scaling)
+- **Tablet Large**: ≤ 1200px (2-column layouts)
+- **Tablet**: ≤ 992px (single column for services)
+- **Mobile**: ≤ 768px (optimized mobile experience)
+- **Mobile Small**: ≤ 480px (compact typography)
 
 ## Pages Updated
 
@@ -51,34 +55,48 @@ The following breakpoints have been implemented:
 - Map and contact information sections optimized
 - Footer navigation adapts to smaller screens
 
-## Key Responsive Features
+## Key Responsive Features (ViviaVerde-Inspired)
 
 ### Navigation
-- Full navigation on desktop
+- Full navigation on desktop with smooth hover effects
 - Hidden on mobile (below 768px) - ready for hamburger menu implementation
-- Search icon hidden on mobile devices
-- "Get a quote" button remains accessible on all devices
+- Logo clickable and responsive
+- "Get a quote" button accessible on all devices
+- Smooth opacity transitions on hover
 
 ### Typography
-- Headings scale from 48px (desktop) to 20-28px (mobile)
-- Body text remains readable at all sizes
+- Fluid scaling: 132px → 40px for large numbers
+- Headings: 48px → 20-28px (smooth transitions)
+- Body text: optimized readability at all sizes
 - Line heights adjusted for better mobile reading
+- Smooth font-size transitions between breakpoints
 
-### Layout
-- Absolute positioning converted to static/relative on mobile
-- Flexbox containers wrap on smaller screens
-- Grid-like layouts become single column on mobile
-- Proper spacing maintained at all breakpoints
+### Layout (Fluid & Centered)
+- Percentage-based widths (90%, 100%) instead of fixed pixels
+- Content max-width constraints for readability
+- Centered layouts with `left: 5%` and `max-width`
+- Flexbox for modern, flexible containers
+- Smooth padding/margin transitions
+- Single column on mobile, multi-column on larger screens
 
-### Images
-- Responsive image sizing using percentage widths
+### Images & Media
+- Responsive with `max-width` constraints
 - Aspect ratios maintained
-- Background images adapt using `background-size: cover`
+- Background images use `background-size: cover`
+- Cards have consistent spacing and padding
 
-### Forms
-- Input fields become full-width on mobile
-- Proper touch targets (minimum 44px)
-- Submit buttons easily accessible
+### Forms (Centered & Accessible)
+- Centered form layout with max-width: 600px
+- Full-width on mobile with proper margins
+- Touch-friendly targets (minimum 44px)
+- Smooth animations and transitions
+- Transform-based centering for perfect alignment
+
+### Smooth Transitions
+- `scroll-behavior: smooth` for anchor links
+- 0.3s ease transitions on padding, margin, font-size
+- Opacity transitions on hover (0.3s)
+- Responsive changes feel natural, not jarring
 
 ## Browser Compatibility
 

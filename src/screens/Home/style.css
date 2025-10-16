@@ -6,6 +6,11 @@
   overflow-x: hidden;
 }
 
+/* Smooth scrolling like ViviaVerde */
+html {
+  scroll-behavior: smooth;
+}
+
 .home .frame-7 {
   background-color: #1f1f1f;
   height: 80px;
@@ -1612,8 +1617,7 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 1440px) {
-  /* Container elements are now flexible */
+@media screen and (max-width: 1600px) {
   .home .frame-7,
   .home .frame-9,
   .home .frame-11,
@@ -1624,18 +1628,12 @@
     width: 100%;
     max-width: none;
   }
+}
 
+@media screen and (max-width: 1440px) {
   .home .navbar-2 {
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  /* Center content within containers */
-  .home .frame-9 > *,
-  .home .frame-11 > *:not(.fastest-secured):not(.text-wrapper-50):not(.text-wrapper-46):not(.frame-12):not(.text-wrapper-48):not(.text-wrapper-49):not(.call) {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1878,430 +1876,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* Header */
-  .home .frame-7 {
-    height: auto;
-    padding: 15px 0;
-  }
-
-  .home .image-removebg-2 {
-    height: 40px;
-    width: auto;
-    left: 20px;
-  }
-
-  .home .MC-DOT-2 {
-    left: 120px;
-    font-size: 8px;
-  }
-
-  .home .navbar-2 {
-    display: none; /* Hide main nav on mobile, would need hamburger menu */
-  }
-
-  .home .frame-8 {
-    right: 10px;
-    top: 15px;
-    padding: 8px 15px;
-  }
-
+  /* Hide navbar on mobile only */
+  .home .navbar-2,
   .home .search-dp-eeaed {
     display: none;
-  }
-
-  /* Hero section */
-  .home .frame-11 {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .home .fastest-secured {
-    font-size: 22px;
-    line-height: 28px;
-    width: 90%;
-    left: 20px;
-  }
-
-  .home .text-wrapper-50 {
-    left: 20px;
-  }
-
-  .home .text-wrapper-46 {
-    width: 90%;
-    left: 20px;
-    font-size: 13px;
-  }
-
-  .home .frame-12 {
-    left: 20px;
-  }
-
-  .home .text-wrapper-48,
-  .home .text-wrapper-49,
-  .home .call {
-    left: 20px;
-  }
-
-  /* Services section */
-  .home .frame-9 {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .home .group,
-  .home .group-2,
-  .home .group-3 {
-    position: static;
-    margin: 20px auto;
-    width: 90%;
-  }
-
-  .home .image {
-    position: static;
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .home .text-wrapper-33 {
-    font-size: 50px;
-    line-height: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .home .text-wrapper-34 {
-    display: none;
-  }
-
-  .home .text-wrapper-35,
-  .home .text-wrapper-36 {
-    position: static;
-    text-align: center;
-    width: 90%;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .home .text-wrapper-36 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  /* Benefits */
-  .home .text-wrapper-38,
-  .home .text-wrapper-39,
-  .home .text-wrapper-40,
-  .home .text-wrapper-41 {
-    position: static;
-    text-align: center;
-    margin: 15px auto;
-    display: block;
-  }
-
-  .home .text-wrapper-42,
-  .home .text-wrapper-43,
-  .home .text-wrapper-44,
-  .home .text-wrapper-45 {
-    position: static;
-    width: 90%;
-    margin: 10px auto 30px;
-    display: block;
-    text-align: center;
-  }
-
-  .home .frame-10,
-  .home .arrow-outward-wrapper {
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    margin: 20px auto;
-  }
-
-  .home .rectangle-3,
-  .home .rectangle-4,
-  .home .rectangle-5,
-  .home .rectangle-6 {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    display: block;
-  }
-
-  /* Build Better Future section */
-  .home .rectangle-7 {
-    position: static;
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .home .rectangle-8 {
-    display: none;
-  }
-
-  .home .text-wrapper-58 {
-    width: 90%;
-    left: 5%;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .home .text-wrapper-52,
-  .home .text-wrapper-53,
-  .home .text-wrapper-54,
-  .home .text-wrapper-55,
-  .home .text-wrapper-56,
-  .home .text-wrapper-57 {
-    position: static;
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .home .check-small,
-  .home .check-small-dp,
-  .home .vector-wrapper,
-  .home .img-wrapper,
-  .home .check-small-2,
-  .home .check-small-3 {
-    display: none;
-  }
-
-  .home .ellipse,
-  .home .ellipse-2 {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .home .text-wrapper-59,
-  .home .text-wrapper-60,
-  .home .text-wrapper-61,
-  .home .polygon {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* Awards section */
-  .home .text-wrapper-62 {
-    width: 90%;
-    left: 5%;
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .home .rectangle-11,
-  .home .rectangle-12 {
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    margin: 20px auto;
-  }
-
-  .home .text-wrapper-63,
-  .home .text-wrapper-64,
-  .home .text-wrapper-65,
-  .home .text-wrapper-66 {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* Contact form */
-  .home .text-wrapper-67,
-  .home .text-wrapper-68 {
-    width: 90%;
-    left: 5%;
-  }
-
-  .home .text-wrapper-67 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .home .frame-14,
-  .home .frame-15,
-  .home .frame-16,
-  .home .frame-17,
-  .home .frame-18 {
-    width: calc(100% - 40px);
-    left: 20px;
-  }
-
-  .home .frame-19 {
-    left: 20px;
-  }
-
-  /* Location info */
-  .home .text-wrapper-70,
-  .home .text-wrapper-71,
-  .home .text-wrapper-72,
-  .home .text-wrapper-73 {
-    position: static;
-    display: block;
-    margin: 15px 20px 5px;
-  }
-
-  .home .west-street-new,
-  .home .element-info,
-  .home .element-info-2,
-  .home .west-th-street-new {
-    position: static;
-    display: block;
-    margin: 5px 20px 20px;
-  }
-
-  /* History section */
-  .home .text-wrapper-74 {
-    width: 90%;
-    left: 5%;
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .home .text-wrapper-75,
-  .home .text-wrapper-76 {
-    left: 20px;
-  }
-
-  .home .line-3,
-  .home .line-4 {
-    width: calc(100% - 40px);
-    left: 20px;
-  }
-
-  .home .text-wrapper-77,
-  .home .text-wrapper-78 {
-    left: 20px;
-    font-size: 24px;
-  }
-
-  .home .vector-9,
-  .home .vector-10 {
-    left: 100px;
-  }
-
-  .home .text-wrapper-79,
-  .home .text-wrapper-80 {
-    width: calc(100% - 40px);
-    left: 20px;
-  }
-
-  /* World section */
-  .home .text-wrapper-81 {
-    font-size: 28px;
-    line-height: 36px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: normal;
-    text-align: center;
-    width: 90%;
-  }
-
-  /* Footer */
-  .home .frame-20 {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .home .text-wrapper-82 {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin: 20px auto;
-  }
-
-  .home .text-wrapper-83,
-  .home .text-wrapper-84,
-  .home .text-wrapper-85,
-  .home .text-wrapper-86,
-  .home .text-wrapper-87,
-  .home .text-wrapper-88,
-  .home .text-wrapper-89,
-  .home .text-wrapper-90,
-  .home .text-wrapper-91,
-  .home .text-wrapper-92 {
-    position: static;
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .home .line-5,
-  .home .line-6 {
-    display: none;
-  }
-
-  .home .vector-14,
-  .home .vector-15 {
-    display: none;
-  }
-
-  .home .text-wrapper-93,
-  .home .text-wrapper-94 {
-    position: static;
-    display: block;
-    text-align: center;
-    margin: 20px auto 10px;
-  }
-
-  .home .text-wrapper-95,
-  .home .text-wrapper-96 {
-    position: static;
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .home .mask-group-2 {
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    top: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Extra small devices */
-  .home .text-wrapper-28 {
-    font-size: 10px;
-  }
-
-  .home .frame-8 {
-    padding: 6px 12px;
-  }
-
-  .home .fastest-secured {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .home .text-wrapper-36 {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
+  /* Reduce font sizes slightly on very small screens */
   .home .text-wrapper-33 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 80px;
   }
-
-  .home .text-wrapper-58,
-  .home .text-wrapper-62,
-  .home .text-wrapper-67,
-  .home .text-wrapper-74,
-  .home .text-wrapper-81 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .home .text-wrapper-77,
-  .home .text-wrapper-78 {
-    font-size: 20px;
+  
+  .home .fastest-secured {
+    font-size: 22px;
   }
 }
