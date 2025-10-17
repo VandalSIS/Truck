@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Stats from './components/Stats'
 import Benefits from './components/Benefits'
-import About from './components/About'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
@@ -20,7 +19,6 @@ function App() {
       <Stats />
       <Benefits />
       <Services />
-      <About />
       <Gallery />
       <Contact />
       <Footer />
